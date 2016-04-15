@@ -1,0 +1,9 @@
+---
+
+- name: Generating autosign config file
+  template:
+    src: etc/puppetlabs/puppet/autosign.conf.j2
+    dest: /etc/puppetlabs/puppet/autosign.conf
+    mode: 0444
+  when: puppetserver_autosign != ""
+  notify: restart puppetserver

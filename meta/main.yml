@@ -1,0 +1,17 @@
+---
+
+galaxy_info:
+  author: Maxim Nazarenko
+  description: Puppet server
+  company: Onix Systems
+  license: license (MIT)
+  min_ansible_version: 1.9
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+  - networking
+  - system
+dependencies:
+  - onix.puppet-common

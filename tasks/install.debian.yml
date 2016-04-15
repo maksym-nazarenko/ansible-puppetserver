@@ -1,0 +1,8 @@
+---
+
+- name: Installing Puppet server
+  apt:
+    name: puppetserver
+    update_cache: yes
+    cache_valid_time: 600
+    state: present
