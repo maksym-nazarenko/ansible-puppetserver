@@ -14,4 +14,4 @@ galaxy_info:
   - networking
   - system
 dependencies:
-  - onix.puppet-common
+  -  maxim-nazarenko.puppet-common
