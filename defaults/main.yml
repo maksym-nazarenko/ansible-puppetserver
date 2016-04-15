@@ -2,5 +2,5 @@
 
 #@TODO: add variables to limit JAVA memory usage
 pupetserver_conf_dir: /etc/puppetlabs/puppet
-puppetserver_autosign: ""
+puppetserver_autosign: "false"
 puppetserver_autosign_whitelist: []
