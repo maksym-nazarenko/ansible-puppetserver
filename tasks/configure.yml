@@ -6,4 +6,11 @@
     dest: /etc/puppetlabs/puppet/autosign.conf
     mode: 0444
   when: puppetserver_autosign != ""
-  notify: restart puppetserver
+  notify: restart puppet server
+
+- name: Generating config
+  template:
+    src: etc/puppetlabs/puppet/puppet.conf.j2
+    dest: "{{ puppet_conf_dir }}/puppet.conf"
+    mode: 0640
+  notify: restart puppet server

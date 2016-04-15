@@ -2,7 +2,7 @@
 
 - include: install.debian.yml
   when: ansible_os_family == "Debian"
-  tags: [ puppetserver]
+  tags: [ puppet, puppet-server]
 
 - include: configure.yml
-  tags: [ puppetserver, puppetserver-configure]
+  tags: [ puppet, puppet-server, puppet-server-configure, puppet-configure ]
