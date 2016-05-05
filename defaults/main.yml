@@ -5,3 +5,4 @@ puppetserver_conf_dir: /etc/puppetlabs/puppet
 puppetserver_environment_dir: "{{ puppetserver_conf_dir }}/code/environments/{{ puppet_environment }}"
 puppetserver_autosign: "false"
 puppetserver_autosign_whitelist: []
+puppetserver_extra_options: {}
