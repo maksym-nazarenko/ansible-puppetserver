@@ -11,7 +11,9 @@ Requirements
 $ puppetserver gem install jruby-ldap
 ```
 and the patch to
-*/opt/puppetlabs/puppet/lib/ruby/gems/2.1.0/gems/jruby-ldap-0.0.2/lib/ldap/entry.rb*:
+*/opt/puppetlabs/puppet/lib/ruby/gems/2.1.0/gems/jruby-ldap-0.0.2/lib/ldap/entry.rb*
+or
+*/opt/puppetlabs/server/data/puppetserver/jruby-gems/gems/jruby-ldap-0.0.2/lib/ldap/entry.rb*
 
 ```ruby
 module LDAP
